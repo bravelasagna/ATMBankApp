@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h0H8XNhe2ow8aQuNbuCyWnLlGEOHPG51uhoQxROxk8pp8pOwQDxg90cm/nqtao8J9GPOfTYG1dBJ2C3ejL1GLg==",
+  "success": true,
+  "projectFilePath": "D:\\Data\\galimbertidave\\github\\ATMBankApp\\microservice-bank\\microservice-bank.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daveg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
