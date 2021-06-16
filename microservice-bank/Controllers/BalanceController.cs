@@ -4,17 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 using GalimbertiDave.ATMBankApp.Microservices.Bank.ApiModels;
 
 namespace GalimbertiDave.ATMBankApp.Microservices.Bank.Controllers
 {
     [ApiController]
+    [AllowAnonymous]
     [Route("api/[controller]")]
     public class BalanceController : ControllerBase
     {
 
         //api/balance/getbalance/accountid/123
+        [AllowAnonymous]
         [HttpGet("getbalance/accountId/{accountId}")]
         public BalanceDetailsDTO GetBalanceByAccountId(string accountId)
         {
