@@ -13,19 +13,13 @@ namespace GalimbertiDave.ATMBankApp.Microservices.Bank.Controllers
     [ApiController]
     [AllowAnonymous]
     [Route("[controller]")]
-    public class BalanceController : ControllerBase
+    public class OperationsController : ControllerBase
     {
 
-        [HttpPost("GetBalance")]
-        public ActionResult<Double> GetBalanceByAccountId(string accountNumber)
+        [HttpPost("Deposit")]
+        public ActionResult<String> Deposit(string accountNumber)
         {
-            
-            BalanceDetailsDTO balanceDTO = new BalanceDetailsDTO();
-            
-            balanceDTO.CurrentBalance = 125.80;
-
-            return balanceDTO.CurrentBalance;
-
+            return "ok";
         }
     }
 }

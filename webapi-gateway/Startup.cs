@@ -39,6 +39,8 @@ namespace GalimbertiDave.ATMBankApp.WebApiGateway
 
             app.UseAuthorization();
 
+            app.UseCors(options => options.AllowAnyOrigin());  
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
